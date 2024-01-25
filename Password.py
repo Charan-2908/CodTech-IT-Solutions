@@ -23,7 +23,7 @@ def main():
 
     # User input for password length
     length = int(
-        input("Enter the desired length of the password (enter 0 to skip): "))
+        input("Enter the length of the password (enter 0 to skip): "))
 
     # If the length is 0, this message will be displayed
     if length == 0:
@@ -32,7 +32,7 @@ def main():
 
     # User input for password complexity
     complexity = input(
-        "Enter the desired complexity level ('low', 'medium', or 'high'): ").lower()
+        "Enter the complexity level ('low', 'medium', or 'high'): ").lower()
 
     # Generate and display the password
     password = generate_password(length, complexity)
